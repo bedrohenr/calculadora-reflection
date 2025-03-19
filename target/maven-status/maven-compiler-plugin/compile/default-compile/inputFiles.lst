@@ -1,0 +1,13 @@
+/home/user/Code/calculadora-reflection/src/main/java/org/example/dto/ResponseDTO.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/model/operation/Multiplicar.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/model/Calc.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/controller/ControllerCalc.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/model/operation/Subtrair.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/view/Menu.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/model/ICalc.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/model/operation/Somar.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/model/CalcX.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/dto/RequestDTO.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/application/Main.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/model/operation/IOperation.java
+/home/user/Code/calculadora-reflection/src/main/java/org/example/model/operation/Dividir.java
