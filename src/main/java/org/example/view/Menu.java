@@ -30,22 +30,22 @@ public class Menu {
 
         System.out.println("---->Olá Meu fi!<----");
         System.out.println("Escolha uma das opção:");
-        // System.out.println("1 - Somar");
-        // System.out.println("2 - Subtrair");
-        // System.out.println("3 - Multiplicar");
-        // System.out.println("4 - Dividir");
-        // System.out.println("5 - Vá embora ...");
+        System.out.println("1 - Somar");
+        System.out.println("2 - Subtrair");
+        System.out.println("3 - Multiplicar");
+        System.out.println("4 - Dividir");
+        System.out.println("5 - Vá embora ...");
 
-        Reflections reflections = new Reflections("org.example.model.operation"); // Substitua pelo seu pacote
+        // Reflections reflections = new Reflections("org.example.model.operation"); // Substitua pelo seu pacote
 
-        // Busca todas as classes que implementam a interface IOperation
-        Set<Class<? extends IOperation>> classes = reflections.getSubTypesOf(IOperation.class);
+        // // Busca todas as classes que implementam a interface IOperation
+        // Set<Class<? extends IOperation>> classes = reflections.getSubTypesOf(IOperation.class);
 
-        int i = 1;
-        // Imprime o nome das classes que implementam a interface
-        for (Class<? extends IOperation> clazz : classes) {
-            System.out.println(i++ + " - " + clazz.getSimpleName());
-        }
+        // int i = 1;
+        // // Imprime o nome das classes que implementam a interface
+        // for (Class<? extends IOperation> clazz : classes) {
+        //     System.out.println(i++ + " - " + clazz.getSimpleName());
+        // }
 
     }
 
