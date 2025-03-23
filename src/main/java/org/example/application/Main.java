@@ -6,7 +6,7 @@ import org.example.dto.RequestDTO;
 import org.example.dto.ResponseDTO;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Menu menu = new Menu();
         RequestDTO requestDTO = menu.show();
         ControllerCalc controllerCalc = new ControllerCalc();
