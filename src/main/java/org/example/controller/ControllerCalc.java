@@ -25,19 +25,19 @@ public class ControllerCalc {
         switch (requestDTO.getOpcao()) {
             case 1:
                 // operation = new Somar();
-                operation = (IOperation) Factory.createInstance("Somar");
+                operation = (IOperation) Factory.getIOperationClassInstance("Somar");
                 break;
             case 2:
                 // operation = new Subtrair();
-                operation = (IOperation) Factory.createInstance("Subtrair");
+                operation = (IOperation) Factory.getIOperationClassInstance("Subtrair");
                 break;
             case 3:
                 // operation = new Multiplicar();
-                operation = (IOperation) Factory.createInstance("Multiplicar");
+                operation = (IOperation) Factory.getIOperationClassInstance("Multiplicar");
                 break;
             case 4:
                 // operation = new Dividir();
-                operation = (IOperation) Factory.createInstance("Dividir");
+                operation = (IOperation) Factory.getIOperationClassInstance("Dividir");
                 break;
         }
         result = calc.calculation(operation,requestDTO.getValor1(),requestDTO.getValor2());
