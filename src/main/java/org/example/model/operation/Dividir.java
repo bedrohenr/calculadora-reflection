@@ -6,4 +6,12 @@ public class Dividir implements IOperation{
         if (value2 == 0)  throw new ArithmeticException("xxxx");
         return value1 / value2;
     }
+
+    public Dividir clone() {
+        try {
+            return (Dividir) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        } 
+    }
 }
