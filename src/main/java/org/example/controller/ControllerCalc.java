@@ -22,22 +22,24 @@ public class ControllerCalc {
 
 
         IOperation operation = null;
+        Factory factory = new Factory();
+
         switch (requestDTO.getOpcao()) {
             case 1:
                 // operation = new Somar();
-                operation = (IOperation) Factory.getIOperationClassInstance("Somar");
+                operation = (IOperation) factory.getIOperationClassInstance("Somar");
                 break;
             case 2:
                 // operation = new Subtrair();
-                operation = (IOperation) Factory.getIOperationClassInstance("Subtrair");
+                operation = (IOperation) factory.getIOperationClassInstance("Subtrair");
                 break;
             case 3:
                 // operation = new Multiplicar();
-                operation = (IOperation) Factory.getIOperationClassInstance("Multiplicar");
+                operation = (IOperation) factory.getIOperationClassInstance("Multiplicar");
                 break;
             case 4:
                 // operation = new Dividir();
-                operation = (IOperation) Factory.getIOperationClassInstance("Dividir");
+                operation = (IOperation) factory.getIOperationClassInstance("Dividir");
                 break;
         }
         result = calc.calculation(operation,requestDTO.getValor1(),requestDTO.getValor2());
