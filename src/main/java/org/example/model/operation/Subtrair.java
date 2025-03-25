@@ -1,6 +1,6 @@
 package org.example.model.operation;
 
-public class Subtrair implements IOperation{
+public class Subtrair implements IOperation, Cloneable {
 
     public int calc (int value1, int value2){
         return value1 - value2;

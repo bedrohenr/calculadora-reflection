@@ -1,6 +1,6 @@
 package org.example.model.operation;
 
-public class Dividir implements IOperation{
+public class Dividir implements IOperation, Cloneable{
 
     public int calc (int value1, int value2){
         if (value2 == 0)  throw new ArithmeticException("xxxx");
