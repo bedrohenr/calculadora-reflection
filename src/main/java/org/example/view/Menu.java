@@ -9,6 +9,14 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class Menu {
+    private Set<Class<? extends IOperation>> escolhas;
+
+    public Menu() {
+        Reflections reflections = new Reflections("org.example.model.operation"); // Substitua pelo seu pacote
+
+        // Busca todas as classes que implementam a interface IOperation
+        this.escolhas = reflections.getSubTypesOf(IOperation.class); // Recebe as classes
+    }
     public RequestDTO show(){
         this.showMenu();
         return this.captureValues();
