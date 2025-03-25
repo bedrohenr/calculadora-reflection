@@ -27,6 +27,11 @@ public class Menu {
         Scanner input = new Scanner(System.in);
         int opcao = input.nextInt();
 
+        if(opcao == 0) {
+            System.out.println("Programa finalizado.");
+            System.exit(1);
+        }
+
         System.out.println("Informe o primeiro valor:");
         int valor1 = input.nextInt();
         System.out.println("Informe o segundo valor:");
