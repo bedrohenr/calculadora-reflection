@@ -12,14 +12,7 @@ public class ControllerCalc {
 
     public ResponseDTO calc(RequestDTO requestDTO) throws Exception{
         int result = 0;
-        ICalc calc = null;
-        if (requestDTO.getOpcao() == 1){
-            calc = new Calc();
-
-        }else {
-            calc = new CalcX();
-        }
-
+        ICalc calc = new Calc();
 
         IOperation operation = null;
         Factory factory = new Factory();
