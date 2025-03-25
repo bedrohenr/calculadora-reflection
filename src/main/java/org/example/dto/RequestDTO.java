@@ -2,12 +2,12 @@ package org.example.dto;
 
 public class RequestDTO {
 
-    public int getOpcao() {
-        return opcao;
+    public String getChosenClass() {
+        return this.chosen_class;
     }
 
-    public void setOpcao(int opcao) {
-        this.opcao = opcao;
+    public void setChosenClass(String chosen_class) {
+        this.chosen_class = chosen_class;
     }
 
     public int getValor1() {
@@ -26,11 +26,11 @@ public class RequestDTO {
         this.valor2 = valor2;
     }
 
-    private int opcao;
+    private String chosen_class;
     private int valor1;
     private int valor2;
-    public RequestDTO(int opcao, int valor1, int valor2) {
-        this.opcao = opcao;
+    public RequestDTO(String chosen_class, int valor1, int valor2) {
+        this.chosen_class = chosen_class;
         this.valor1 = valor1;
         this.valor2 = valor2;
     }

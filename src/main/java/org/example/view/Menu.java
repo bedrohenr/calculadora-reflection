@@ -26,18 +26,24 @@ public class Menu {
 
         Scanner input = new Scanner(System.in);
         int opcao = input.nextInt();
+
         System.out.println("Informe o primeiro valor:");
         int valor1 = input.nextInt();
         System.out.println("Informe o segundo valor:");
         int valor2 = input.nextInt();
 
-        return new RequestDTO(opcao,valor1,valor2);
+        String chosen_class = findSelectedIOperationClasses(opcao);
+        return new RequestDTO(chosen_class,valor1,valor2);
     }
 
     private void showMenu(){
 
         System.out.println("---->Olá Meu fi!<----");
         System.out.println("Escolha uma das opção:");
+        System.out.println("0 - Sair");
+        this.showIOperationClasses(); // Mostra as classes que implementam IOperation
+    }
+
     public void showIOperationClasses(){
         int i = 1;
         // Imprime o nome das classes que implementam a interface
