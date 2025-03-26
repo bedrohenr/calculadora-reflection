@@ -58,11 +58,11 @@ Facilmente implementado com o uso da interface nativa Cloneable.
 
 ### Strategy
 
-Permite definir uma família de algoritmos, encapsular cada um deles e torná-los intercambiáveis. 
+Permite definir uma família de algoritmos, encapsular cada um deles e torná-los intercambiáveis. Permite que o algoritmo varie independentemente dos clientes que o utilizam.
 
-Permite que o algoritmo varie independentemente dos clientes que o utilizam.
+Implementado nas classes de operações: [Somar](./src/main/java/org/example/model/operation/Somar.java), [Subtrair](./src/main/java/org/example/model/operation/Subtrair.java), [Multiplicar](src/main/java/org/example/model/operation/Multiplicar.java)... 
 
-Implementado na classe [CalcCC](./src/main/java/org/example/model/CalcCC.java), mas não usado 😱. 
+Transformando os comportamentos do programa em classes.
 
 ### Singleton
 
